@@ -1,0 +1,23 @@
+.paragraph:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+h1.markdown-default {
+  @apply text-tundora mb-40px;
+}
+
+h2.markdown-default {
+  @apply text-tundora md:text-black-gray mb-40px;
+}
+
+h3.markdown-default {
+  @apply text-tundora mb-40px;
+}
+
+h4.markdown-default {
+  @apply text-tundora mb-40px;
+}
+
+p.markdown-default {
+  @apply paragraph text-black-gray;
+}

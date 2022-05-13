@@ -1,0 +1,16 @@
+@layer base {
+  @variants responsive {
+    .three-elements-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .three-elements-grid-title {
+      @apply sm+:text-center text-dark-orange mt-20px sm+:mt-40px mb-20px sm+:mb-39px;
+    }
+
+    .three-elements-grid-description {
+      @apply sm+:text-center text-black-gray;
+    }
+  }
+}

@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  color: #0b121d;
+}
+
+html body {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Rosario"), url("../fonts/rosario/Rosario-Regular.woff2") format("woff2"),
+    url("../fonts/rosario/Rosario-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Rosario";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Rosario"), url("../fonts/rosario/Rosario-Bold.woff2") format("woff2"),
+    url("../fonts/rosario/Rosario-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Metropolis"), url("../fonts/metropolis/metropolis-regular.woff2") format("woff2"),
+    url("../fonts/metropolis/metropolis-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Metropolis"), url("../fonts/metropolis/metropolis-bold.woff2") format("woff2"),
+    url("../fonts/metropolis/metropolis-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Late November";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Late November"), local("Late-November"), url("../fonts/late-november/late-november.woff2") format("woff2"),
+    url("../fonts/late-november/late-november.woff") format("woff");
+}
+@font-face {
+  font-family: "Late November";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Late November"), local("Late-November"),
+    url("../fonts/late-november/late-november-bold.woff2") format("woff2"),
+    url("../fonts/late-november/late-november-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-100italic.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-100italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-200.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-200.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-300.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-300.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v5-latin-italic.woff") format("woff2"),
+    url("../fonts/poppins/poppins-v5-latin-italic.woff2") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-500.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-500.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Poppins"), url("../fonts/poppins/poppins-v15-latin-700.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-v15-latin-700.woff") format("woff");
+}
+
+@layer utilities {
+  h1 {
+    font-family: "Late November", "Roboto", "Arial", "sans-serif";
+    font-size: 4.66223464rem;
+    line-height: 4.66223464rem;
+  }
+
+  h2 {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 2.88148rem;
+    line-height: 2.88148rem;
+  }
+
+  h3 {
+    font-family: "Late November", "Roboto", "Arial", "sans-serif";
+    font-weight: 100;
+    font-size: 2.2652rem;
+    line-height: 2.2652rem;
+  }
+
+  h4 {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 600;
+    font-size: 1.7808rem;
+    line-height: 1.7808rem;
+  }
+
+  p {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+
+  .footer-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 1.10068rem;
+    line-height: 1.10068rem;
+  }
+
+  .link-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .eyebrow-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 1.10068rem;
+    line-height: 1.10068rem;
+  }
+
+  .eyebrow-alt-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 100;
+    font-size: 1.10068rem;
+    line-height: 1.10068rem;
+    text-transform: uppercase;
+  }
+
+  .button-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .field-labels-font {
+    font-family: "Poppins", "Roboto", "Arial", "sans-serif";
+    font-weight: 700;
+    font-size: 1.10068rem;
+    line-height: 1.10068rem;
+  }
+
+  .placeholder-font {
+    font-family: "Late November", "Roboto", "Arial", "sans-serif";
+    font-size: 1.10068rem;
+    line-height: 1.10068rem;
+  }
+
+  .placeholder-font::placeholder {
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @media screen(md) {
+    h1 {
+      font-size: 5.32826816rem;
+      line-height: 5.32826816rem;
+    }
+
+    h2 {
+      font-size: 3.29312rem;
+      line-height: 3.29312rem;
+    }
+
+    h3 {
+      font-size: 2.5888rem;
+      line-height: 2.5888rem;
+    }
+
+    h4 {
+      font-size: 2.0352rem;
+      line-height: 2.0352rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+
+    .footer-font {
+      font-size: 1.25792rem;
+      line-height: 2.25792rem;
+    }
+
+    .link-font {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-font {
+      font-size: 1.25792rem;
+      line-height: 1.25792rem;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-alt-font {
+      font-size: 1.25792rem;
+      line-height: 1.25792rem;
+    }
+
+    .button-font {
+      font-size: 1.6rem;
+      line-height: 1.6rem;
+    }
+
+    .field-labels-font {
+      font-size: 1.25792rem;
+      line-height: 1.25792rem;
+    }
+
+    .placeholder-font {
+      font-size: 1.25792rem;
+      line-height: 1.25792rem;
+    }
+  }
+}

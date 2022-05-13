@@ -1,0 +1,39 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Pull Sync
+
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      branch:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'Client Repo Branch to sync with'
+        # Default value if no value is explicitly provided
+        default: 'main'
+        # Input has to be provided for the workflow to run
+        required: true
+
+      comment:
+        description: 'Our repo commit comment'
+        default: 'Sync with clients repo'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: adrianjost/files-sync-action@v1.4.2
+        with:
+          FILE_PATTERNS: |
+            ^.netlify/*
+            ^src/*
+            ^static/*
+            ^gatsby-*
+            ^tailwind.config.js
+            ^package.json
+            ^package-lock.json
+          SRC_REPO: 'three97-dev/prehomes'
+          TARGET_REPOS: 'NeatByte-Solutions/prehomes-neatbyte'
+          GITHUB_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          COMMIT_MESSAGE: ${{ github.event.inputs.comment }}

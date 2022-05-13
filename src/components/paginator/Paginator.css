@@ -1,0 +1,37 @@
+.paginate-block {
+  margin-top: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  padding-left: 35px;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.active-page {
+  @apply font-bold !important;
+}
+.button-outline-none a:focus {
+  outline: none !important;
+  border: none !important;
+}
+.paginate-block a:focus,
+.prev-next-button-outline:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 713px) {
+  .paginate-block {
+    margin-top: 67px;
+    border-top: none;
+    border-bottom: none;
+    padding-right: 142px;
+    padding-left: 142px;
+  }
+
+  .paginate-block a:focus,
+  .prev-next-button-outline:focus {
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
